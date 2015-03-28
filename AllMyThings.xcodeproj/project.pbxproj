@@ -27,6 +27,7 @@
 		149571AB1AC63C7B00AD8E17 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149571AA1AC63C7B00AD8E17 /* MyMenuTableViewController.swift */; };
 		14C368041AC1D48300A9D5C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C368031AC1D48300A9D5C5 /* AppDelegate.swift */; };
 		14C3681A1AC1D48400A9D5C5 /* AllMyThingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C368191AC1D48400A9D5C5 /* AllMyThingsTests.swift */; };
+		14D94A211AC6AD0A009F9AD4 /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D94A201AC6AD0A009F9AD4 /* LegalViewController.swift */; };
 		14F208901AC1DBE00067F084 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F208711AC1DABA0067F084 /* Parse.framework */; };
 		14F208911AC1DBE30067F084 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F208731AC1DAC40067F084 /* Bolts.framework */; };
 		14F208921AC1DBE60067F084 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F208751AC1DAEA0067F084 /* Accounts.framework */; };
@@ -80,6 +81,7 @@
 		14C368131AC1D48300A9D5C5 /* AllMyThingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllMyThingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C368181AC1D48300A9D5C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C368191AC1D48400A9D5C5 /* AllMyThingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMyThingsTests.swift; sourceTree = "<group>"; };
+		14D94A201AC6AD0A009F9AD4 /* LegalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegalViewController.swift; sourceTree = "<group>"; };
 		14F208711AC1DABA0067F084 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../../Downloads/parse-library-1.6.4/Parse.framework"; sourceTree = "<group>"; };
 		14F208731AC1DAC40067F084 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../../Downloads/parse-library-1.6.4/Bolts.framework"; sourceTree = "<group>"; };
 		14F208751AC1DAEA0067F084 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -177,6 +179,7 @@
 				149571A61AC63C3300AD8E17 /* ENSideMenuNavigationController.swift */,
 				149571A81AC63C5300AD8E17 /* MyNavigationController.swift */,
 				149571AA1AC63C7B00AD8E17 /* MyMenuTableViewController.swift */,
+				14D94A201AC6AD0A009F9AD4 /* LegalViewController.swift */,
 				149571681AC6110000AD8E17 /* Images.xcassets */,
 				1495716A1AC6110000AD8E17 /* lock.imageset */,
 				14C368011AC1D48300A9D5C5 /* Supporting Files */,
@@ -337,6 +340,7 @@
 			files = (
 				149571AB1AC63C7B00AD8E17 /* MyMenuTableViewController.swift in Sources */,
 				149571781AC6110000AD8E17 /* ItemCell.swift in Sources */,
+				14D94A211AC6AD0A009F9AD4 /* LegalViewController.swift in Sources */,
 				1495717A1AC6110000AD8E17 /* AddListVC.swift in Sources */,
 				149571A51AC63C1500AD8E17 /* ENSideMenu.swift in Sources */,
 				149571751AC6110000AD8E17 /* ItemsVC.swift in Sources */,

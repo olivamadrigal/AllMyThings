@@ -16,9 +16,9 @@ class MyMenuTableViewController: UITableViewController {
         // Customize apperance of table view
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
         tableView.separatorStyle = .None
-        tableView.backgroundColor = UIColor.clearColor()
+        tableView.backgroundColor = UIColor.whiteColor()
         tableView.scrollsToTop = false
-        
+       
         // Preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
         
@@ -39,7 +39,7 @@ class MyMenuTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 4
+        return 5
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -54,8 +54,30 @@ class MyMenuTableViewController: UITableViewController {
             selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
             cell!.selectedBackgroundView = selectedBackgroundView
         }
+        //this will name the sections of the side menu based on their index path
+        var index = indexPath.row
+        if index == 0{
+          
+            cell!.textLabel?.text = "Home"
+            
+            
+        }
+        else if index == 1 {
+            cell!.textLabel?.text = "Legal"
+        }
+        else if index == 2 {
+            cell!.textLabel?.text = "Report a Bug"
+        }
+        else if index == 3 {
+            cell!.textLabel?.text = "Settings"
+        }
+            
+        else
+        {
+            //cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
+            cell!.textLabel?.text = "Credits"
+        }
         
-        cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
         
         return cell!
     }
@@ -78,30 +100,23 @@ class MyMenuTableViewController: UITableViewController {
         var destViewController : UIViewController
         switch (indexPath.row) {
         case 0:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Home") as UIViewController
             break
         case 1:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LegalViewController") as UIViewController
             break
         case 2:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3") as UIViewController
             break
-        default:
+        case 3:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4") as UIViewController
+            break
+
+        default:
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5") as UIViewController
             break
         }
         sideMenuController()?.setContentViewController(destViewController)
     }
-    
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }
