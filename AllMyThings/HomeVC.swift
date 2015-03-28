@@ -11,7 +11,7 @@ import UIKit
 var username = ""
 var listName = ""
 
-class HomeVC: UITableViewController, UINavigationControllerDelegate  {
+class HomeVC: UITableViewController, UINavigationControllerDelegate {
 
     // this is our list object
     var usersLists = [PFObject]()
@@ -160,8 +160,10 @@ class HomeVC: UITableViewController, UINavigationControllerDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        username = PFUser.currentUser().username
     
-       self.loadData()
+        self.loadData()
+        
         // Set up the refresh control
         self.setupRefreshControl()
     
@@ -178,8 +180,7 @@ class HomeVC: UITableViewController, UINavigationControllerDelegate  {
         self.navigationController?.navigationBar.barTintColor = UIColor.grayColor()
         
     
-        username = PFUser.currentUser().username
-        
+      
      
     }
     
@@ -187,7 +188,7 @@ class HomeVC: UITableViewController, UINavigationControllerDelegate  {
         
         self.loadData()
         //hides back button
-        self.navigationItem.hidesBackButton = true
+         self.navigationItem.hidesBackButton = true
         //shows the navigation bar
         self.navigationController?.navigationBarHidden = false
         
@@ -289,8 +290,11 @@ class HomeVC: UITableViewController, UINavigationControllerDelegate  {
         }
     }
     
+  
  
+    @IBAction func toggleSideMenu(sender: AnyObject) {
+          toggleSideMenuView()
+    }
 
-    
-
+   
 }

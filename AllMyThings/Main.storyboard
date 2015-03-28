@@ -436,8 +436,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Home" id="drh-ho-dbt">
-                        <barButtonItem key="leftBarButtonItem" image="menubutton" id="aOa-tc-5DN">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="leftBarButtonItem" image="menubutton" style="plain" id="UsA-dC-bWF">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cLE-QS-wIZ">
+                                <rect key="frame" x="41" y="10" width="22" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="menubutton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleSideMenu:" destination="hMg-ee-avI" eventType="touchUpInside" id="yhz-Ak-nXo"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="toggleSideMenu:" destination="hMg-ee-avI" id="0Uj-af-TSS"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="B94-T8-Qu7">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -546,10 +558,10 @@
             </objects>
             <point key="canvasLocation" x="1370" y="1117"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--My Navigation Controller-->
         <scene sceneID="8dT-wu-9cA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zeq-s9-KgO" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zeq-s9-KgO" customClass="MyNavigationController" customModule="AllMyThings" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pwk-v1-dyt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -574,6 +586,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="DdS-k2-wVh"/>
+        <segue reference="d4t-lt-g1N"/>
     </inferredMetricsTieBreakers>
 </document>
