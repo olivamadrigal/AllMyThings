@@ -29,6 +29,5 @@ class LegalViewController: UIViewController, UINavigationControllerDelegate {
     }
    
    
-
-
+   
 }

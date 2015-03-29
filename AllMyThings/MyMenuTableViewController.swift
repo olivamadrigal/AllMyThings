@@ -106,7 +106,7 @@ class MyMenuTableViewController: UITableViewController {
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LegalViewController") as UIViewController
             break
         case 2:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ReportBugViewController") as UIViewController
             break
         case 3:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4") as UIViewController
