@@ -380,7 +380,56 @@
             </objects>
             <point key="canvasLocation" x="1370" y="1872"/>
         </scene>
-        <!--Report Bug View Controller-->
+        <!--Settings-->
+        <scene sceneID="Lux-eu-VPJ">
+            <objects>
+                <tableViewController storyboardIdentifier="Settings" id="M1i-0n-AsX" customClass="SettingsTableViewController" customModule="AllMyThings" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SnR-Ay-0RE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="Account" footerTitle="Version 1.0.0" id="z6q-jU-fcf">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="h7U-YG-f86">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h7U-YG-f86" id="F8C-Ka-rAi">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y1h-kK-FnI">
+                                                    <rect key="frame" x="8" y="7" width="304" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Log Out">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="logOutUser:" destination="M1i-0n-AsX" eventType="touchUpInside" id="2Mf-Qa-NBn"/>
+                                                        <segue destination="vXZ-lx-hvc" kind="push" id="NhO-wM-75i"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="M1i-0n-AsX" id="Zq9-G7-5Ph"/>
+                            <outlet property="delegate" destination="M1i-0n-AsX" id="JRi-DR-yt5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="IuS-8A-3wa"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="logOutBtn" destination="y1h-kK-FnI" id="0Be-pp-NIV"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ucp-e5-yee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="-290"/>
+        </scene>
+        <!--Report A Bug-->
         <scene sceneID="65f-Bf-R3r">
             <objects>
                 <viewController storyboardIdentifier="ReportBugViewController" id="zaZ-HH-GLL" customClass="ReportBugViewController" customModule="AllMyThings" customModuleProvider="target" sceneMemberID="viewController">
@@ -428,6 +477,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Report A Bug" id="eEM-Cp-Mck"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="commentTxtView" destination="SwB-LI-Slh" id="acN-9b-0Nq"/>
@@ -439,7 +489,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFP-9i-fCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170" y="1117"/>
+            <point key="canvasLocation" x="189" y="1117"/>
         </scene>
         <!--Legal-->
         <scene sceneID="vkm-PI-x42">
@@ -491,7 +541,7 @@ SOFTWARE.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c65-fd-0U7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543" y="1117"/>
+            <point key="canvasLocation" x="569" y="1117"/>
         </scene>
         <!--Home-->
         <scene sceneID="pDf-dv-7nF">
@@ -676,6 +726,7 @@ SOFTWARE.</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zeq-s9-KgO" customClass="MyNavigationController" customModule="AllMyThings" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="aPp-4s-d9o"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pwk-v1-dyt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -700,5 +751,6 @@ SOFTWARE.</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="DdS-k2-wVh"/>
+        <segue reference="NhO-wM-75i"/>
     </inferredMetricsTieBreakers>
 </document>

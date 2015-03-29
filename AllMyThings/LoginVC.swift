@@ -23,6 +23,14 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var legalTxtView: UITextView!
     
+    
+    @IBAction func cancelToLoginViewController(segue:UIStoryboardSegue) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

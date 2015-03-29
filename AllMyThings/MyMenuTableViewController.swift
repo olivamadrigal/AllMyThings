@@ -72,11 +72,11 @@ class MyMenuTableViewController: UITableViewController {
             cell!.textLabel?.text = "Settings"
         }
             
-        else
-        {
-            //cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
-            cell!.textLabel?.text = "Credits"
-        }
+//        else
+//        {
+//            //cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
+//            cell!.textLabel?.text = "Credits"
+//        }
         
         
         return cell!
@@ -108,13 +108,13 @@ class MyMenuTableViewController: UITableViewController {
         case 2:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ReportBugViewController") as UIViewController
             break
-        case 3:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4") as UIViewController
+        default:
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Settings") as UIViewController
             break
 
-        default:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5") as UIViewController
-            break
+//        default:
+//            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5") as UIViewController
+//            break
         }
         sideMenuController()?.setContentViewController(destViewController)
     }
