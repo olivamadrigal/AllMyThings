@@ -42,4 +42,8 @@ class SettingsTableViewController: UITableViewController, UINavigationController
         
         
     }
+    
+    @IBAction func toggleSideMenu(sender: AnyObject) {
+        toggleSideMenuView()
+    }
 }

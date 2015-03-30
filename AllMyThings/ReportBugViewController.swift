@@ -152,6 +152,7 @@ class ReportBugViewController: UIViewController, UITextFieldDelegate, UINavigati
 
     }
     
-    
-    
+    @IBAction func toggleSideMenu(sender: AnyObject) {
+        toggleSideMenuView()
+    }
 }

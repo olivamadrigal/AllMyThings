@@ -29,5 +29,7 @@ class LegalViewController: UIViewController, UINavigationControllerDelegate {
     }
    
    
-   
+    @IBAction func toggleSideMenu(sender: AnyObject) {
+        toggleSideMenuView()
+    }
 }
