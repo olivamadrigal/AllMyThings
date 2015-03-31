@@ -39,7 +39,7 @@ class MyMenuTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 5
+        return 4
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -68,17 +68,11 @@ class MyMenuTableViewController: UITableViewController {
         else if index == 2 {
             cell!.textLabel?.text = "Report a Bug"
         }
-        else if index == 3 {
+        else  {
             cell!.textLabel?.text = "Settings"
         }
             
-//        else
-//        {
-//            //cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
-//            cell!.textLabel?.text = "Credits"
-//        }
-        
-        
+
         return cell!
     }
     
@@ -93,6 +87,7 @@ class MyMenuTableViewController: UITableViewController {
         if (indexPath.row == selectedMenuItem) {
             return
         }
+        
         selectedMenuItem = indexPath.row
         
         //Present new view controller
@@ -111,10 +106,6 @@ class MyMenuTableViewController: UITableViewController {
         default:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Settings") as UIViewController
             break
-
-//        default:
-//            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5") as UIViewController
-//            break
         }
         sideMenuController()?.setContentViewController(destViewController)
     }

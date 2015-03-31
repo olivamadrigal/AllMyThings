@@ -7,7 +7,7 @@
         <!--LoginVC-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="LoginVC" customModule="AllMyThings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="vXZ-lx-hvc" customClass="LoginVC" customModule="AllMyThings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -389,7 +389,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection headerTitle="Account" footerTitle="Version 1.0.0" id="z6q-jU-fcf">
+                            <tableViewSection headerTitle="Account" footerTitle="" id="z6q-jU-fcf">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="h7U-YG-f86">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -405,13 +405,33 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="logOutUser:" destination="M1i-0n-AsX" eventType="touchUpInside" id="2Mf-Qa-NBn"/>
-                                                        <segue destination="vXZ-lx-hvc" kind="push" id="NhO-wM-75i"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Security" footerTitle="Version 1.0.0" id="E8G-mC-n4C">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="Qxo-rU-Ak7">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qxo-rU-Ak7" id="KeS-My-DVF">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Private Lists" minimumFontSize="17" id="GZL-a4-2eE">
+                                                    <rect key="frame" x="8" y="7" width="304" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" footerTitle="" id="a1A-lM-HOr">
+                                <cells/>
                             </tableViewSection>
                         </sections>
                         <connections>
@@ -434,7 +454,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ucp-e5-yee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="-290"/>
+            <point key="canvasLocation" x="-160" y="1117"/>
         </scene>
         <!--Report A Bug-->
         <scene sceneID="65f-Bf-R3r">
@@ -503,7 +523,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFP-9i-fCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="189" y="1117"/>
+            <point key="canvasLocation" x="209" y="1117"/>
         </scene>
         <!--Legal-->
         <scene sceneID="vkm-PI-x42">
@@ -520,7 +540,7 @@
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
                                 </accessibility>
-                                <mutableString key="text">The MIT License (MIT)
+                                <string key="text">The MIT License (MIT)
 
 Copyright (c) 2015 Kareem Khattab
 
@@ -535,7 +555,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</mutableString>
+SOFTWARE.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -767,6 +787,5 @@ SOFTWARE.</mutableString>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="DdS-k2-wVh"/>
-        <segue reference="NhO-wM-75i"/>
     </inferredMetricsTieBreakers>
 </document>
