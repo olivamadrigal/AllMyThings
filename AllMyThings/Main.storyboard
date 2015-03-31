@@ -7,7 +7,7 @@
         <!--LoginVC-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="SignInViewController" id="vXZ-lx-hvc" customClass="LoginVC" customModule="AllMyThings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="LoginVC" customModule="AllMyThings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -760,7 +760,7 @@ SOFTWARE.</string>
         <!--My Navigation Controller-->
         <scene sceneID="8dT-wu-9cA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zeq-s9-KgO" customClass="MyNavigationController" customModule="AllMyThings" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SignInViewController" automaticallyAdjustsScrollViewInsets="NO" id="Zeq-s9-KgO" customClass="MyNavigationController" customModule="AllMyThings" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="aPp-4s-d9o"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pwk-v1-dyt">

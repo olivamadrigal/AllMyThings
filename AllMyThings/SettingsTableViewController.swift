@@ -93,7 +93,7 @@ class SettingsTableViewController: UITableViewController, UINavigationController
         var title: UILabel = UILabel()
        
        
-        if section == 1
+        if section == 16
         {
             
             title.text = "Version 1.0.0"
