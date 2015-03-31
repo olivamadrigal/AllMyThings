@@ -27,5 +27,3 @@ Questions
 
 Have a question? Feel free to contact me on <a href="http://www.twitter.com/kvreem" target="_blank">Twitter</a>
 
-
-Copyright 2015 Kareem Khattab
