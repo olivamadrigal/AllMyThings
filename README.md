@@ -6,6 +6,7 @@ iOS Application to store your belongings and make lists!
 
 
 ## Features
+- Optimized for iPhone 4s 5s and 6 
 - Login / Sign Up via Parse
 - Add / Remove Lists 
 - Add / Remove Items 
