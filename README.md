@@ -2,7 +2,9 @@
 
 Submitted in 2016 as part of fullfilment for CMPE 131: Software Engineering, Semester Group Project to Build Inventory Management Application.
 
-Team members: Tiffany Tran, Brandon Zhen, Kareem Khattab, & Samira C. Oliva Madrigal
+Team members: 
+
+Tiffany Tran, Brandon Zhen, Kareem Khattab, & Samira C. Oliva Madrigal
 
 Scrum approach
 
