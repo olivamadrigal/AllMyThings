@@ -1,3 +1,28 @@
+# About this Project:
+
+Submitted in 2016 as part of fullfilment for CMPE 131: Software Engineering, Semester Group Project to Build Inventory Management Application.
+
+Team members: Tiffany Tran, Brandon Zhen, Kareem Khattab, & Samira C. Oliva Madrigal
+
+Scrum approach
+
+# Deliverables are Source Code Implementation and Product Package Document that contains:
+
+User Guide
+
+Detailed Software Requirements Specifications (IEEE Std 830-1998)
+
+Software Design
+
+Detailed  Descriptions
+
+Software Requirements Test Plan and Test Cases 
+
+Traceability Matrix 
+
+Cost Estimation and Project Plan with Facts and Figures 
+
+
 # AllMyThings
 
 iOS Application to store your belongings and make lists!
